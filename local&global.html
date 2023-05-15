@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local & global variable</title>
+    <script>
+        var a=50; //global variable
+        document.write(a,'<br>');
+
+        function fun(a){
+            // var a=70;
+            var b=40; //local variable
+            return a;
+        }
+        document.write(fun(a),'<br>');
+        document.write(b);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script>
+        function hello(){           //normal function
+            document.write("Hello Everybody !")
+            document.write("<br>")
+        }
+        hello();
+        hello();
+        hello();
+        hello();
+
+        function sum(a,b){        // function with parameter
+            document.write(a+b)
+            document.write("<br>")
+        }
+
+        sum(20,40);
+        sum(50,7);
+
+        function hello(fname,lname){
+            document.write("Hello "+fname +" "+lname );
+        }
+        hello('Naresh','Kumar');
+
+        function fun(fname='nishad',lname='mehta'){        // function with keyword argument
+            document.write("Hello " +fname +" "+lname );
+            document.write("<br>")
+        }
+        fun('Naresh','Kumar');
+        fun('jay');
+        fun();
+        fun('','miskin');
+
+        function ret(a,b){              //function with return value
+            return a+b;
+        }
+
+        var a=ret(20,30);
+        document.write(a);
+
+        function total(a,b,c){
+            return a+b+c;
+        }
+        function per(a){
+            return a/300*100;
+        }
+
+        var d=total(70,60,80);
+        var f=per(d);
+        document.write("<br>"+ f);  
+
+        // const jay=30;
+        // jay=50;
+        // document.write(jay);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
